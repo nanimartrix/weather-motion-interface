@@ -90,6 +90,8 @@ Next steps:
 
 ![Weather Motion Interface](./assets/preview.png)
 
+Live: https://weather-motion-interface.netlify.app/
+
 ---
 
 ## Notes
