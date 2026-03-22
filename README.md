@@ -41,6 +41,26 @@ This project maps weather data to visual parameters:
 
 ---
 
+## Project Structure
+
+weather-motion-interface
+│
+├── index.html
+├── style.css
+├── app.js
+├── visuals.js
+├── README.md
+├── learning-notes.md
+└── assets/
+└── preview.png
+
+Key files:
+
+- `app.js` → handles API requests and UI updates
+- `visuals.js` → manages canvas rendering and animation
+
+---
+
 ## Data Source
 
 Weather data provided by Open-Meteo
