@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Motion Interface</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="search-panel">
+        <p class="eyebrow">Weather Motion Interface</p>
+        <h1>Ein visuelles System für Wetterdaten</h1>
+        <p class="intro">
+          Aktuelle Wetterdaten werden in Farbe, Bewegung und Dichte übersetzt.
+        </p>
+
+        <div class="search-row">
+          <label class="sr-only" for="cityInput">Ort</label>
+          <input
+            id="cityInput"
+            type="text"
+            placeholder="z. B. Berlin"
+            autocomplete="off"
+          />
+          <button id="searchBtn">Wetter laden</button>
+        </div>
+
+        <p id="statusText" class="status" aria-live="polite"></p>
+      </section>
+
+      <section class="weather-panel">
+        <div class="weather-meta">
+          <p id="locationName" class="location"></p>
+          <h2 id="temperature" class="temperature"></h2>
+          <p id="conditionText" class="condition"></p>
+        </div>
+
+        <div class="weather-details">
+          <p>Wind <span id="wind"></span></p>
+          <p>Luftfeuchtigkeit <span id="humidity"></span></p>
+          <p>Tageszeit <span id="dayState"></span></p>
+        </div>
+      </section>
+
+      <section class="visual-panel">
+        <canvas id="weatherCanvas" aria-hidden="true"></canvas>
+      </section>
+
+      <footer class="source-note">Data source: Open-Meteo</footer>
+    </main>
+
+    <script src="visuals.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
